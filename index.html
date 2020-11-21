@@ -5,28 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .content{
+            display: flex;
+            justify-content: center;
+        }
+        .links{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px,20px));
+            gap: 18px;
+            margin-top: 20px;
+            justify-content: center;
+           }
         .github{
+            opacity: .1;
             background: url(GitHub-Mark.png);
-            height: 560px;
-            width: 560px;
+            background-size: 100% 100%;
+            height: 100px;
+            width: 100px;
             display: block;
+            justify-content: center;
         }
         .github:hover{
-            filter: drop-shadow(560px 560px 100px red);
+            filter: drop-shadow(0px 0px 1px rgb(138, 198, 255));
         }
+        .email{
+            background: url(mail-1138-827052.webp);
+            background-size: 100% 100%;
+            height: 100px;
+            width: 100px;
+            display: block;
+            justify-content: center;
+        }
+        .resume{
+            margin-top: 50%;
+            transform: translateY(-50%);
+            text-decoration: none;
+            background-color: rgb(108, 130, 255);
+            font-family: Helvetica ;
+            font-size: 36px;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 25.5px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .projects{
+            margin-top: 50%;
+            transform: translateY(-50%);
+            text-decoration: none;
+            background-color: rgb(255, 118, 248);
+            font-family: Helvetica ;
+            font-size: 36px;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 25.5px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .intro{
+            text-align: center;
+            font-family: Helvetica ;
+        }
+        .imgwrap{
+            text-align: center;
+        }
+        h1{
+            line-height: 3px;
+        }
+        p{
+            line-height: 5px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
     </style>
 </head>
 
 <body>
+<div class="content">
    <div class="container">
-    <h1>"Johnny Palacio"</h1>
-        <p>College Student and (future) software engineer</p>
-   </div>
-   <div class="links">
-    <a class='github' href="https://github.com/Johnny-Dean" title="github">
+       <div class="imgwrap">
+           <img class= "photo" src="whatweuse.png" alt="me lolz">
+        </div>
+        <div class="intro">
+            <h1>Johnny Dean</h1>
+            <p>College Student and <span style="color:blue"> (future) </span> software engineer</p>
+        </div>
 
-        </a>
+        <div class="links">
+
+            <a class="github" href="https://github.com/Johnny-Dean" title="github"></a>
+            <a class="email" href="mailto: johndevince@mail.fresnostate.edu" title="mail"></a>
+            <a class="resume" href="google.com" title="resume">Resume</a>  
+            <a class="projects" href="google.com" title=projects>Projects</a>
+            
+        </div>
    </div>
+</div>
 </body>
 
 </html>
