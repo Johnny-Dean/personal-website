@@ -10,78 +10,100 @@
             justify-content: center;
         }
         .links{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px,20px));
-            gap: 18px;
-            margin-top: 20px;
-            justify-content: center;
+            display: flex;
+            flex-flow: ro w;
+            justify-content: space-around;
+            align-items: center;
+            block-size: 150px;
+            margin: 0 5%;
+            padding-right: 5px;
            }
+
+           .vl{
+           background-color: rgb(185, 185, 185);
+           height: 15px;
+           width: 1.25px;
+           border-radius: 20px;
+           margin-left: -5px;
+           margin-right: 10px;
+       }
         .github{
-            opacity: .1;
-            background: url(GitHub-Mark.png);
+            background: url(iconmonstr-github-1.svg);
             background-size: 100% 100%;
-            height: 100px;
-            width: 100px;
-            display: block;
-            justify-content: center;
+            height: 15%;
+            width:  15%;
         }
         .github:hover{
-            filter: drop-shadow(0px 0px 1px rgb(138, 198, 255));
+            filter: drop-shadow(1.5px 1.5px .1px rgb(138, 198, 255));
         }
         .email{
-            background: url(mail-1138-827052.webp);
+            background: url(iconmonstr-email-10.svg);
             background-size: 100% 100%;
-            height: 100px;
-            width: 100px;
-            display: block;
+            height: 15%;
+            width:  15%;
             justify-content: center;
+            margin: 0 0 0 -25px;
         }
         .resume{
-            margin-top: 50%;
-            transform: translateY(-50%);
-            text-decoration: none;
-            background-color: rgb(108, 130, 255);
-            font-family: Helvetica ;
-            font-size: 36px;
-            color: white;
-            font-size: 1em;
-            font-weight: bold;
-            border-radius: 25.5px;
+            padding-top: 2px;
             display:flex;
+            text-align: center;
             justify-content: center;
-            align-items: center;
+            width: 85px;
+            height: 20px;
+            line-height: 20px;
+            border-radius:30px;
+            background-color: cornflowerblue;
+            text-decoration: none;
+            font-family: Helvetica ;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            transition: all .3s ease;
         }
+        .resume:hover{
+            background-color: blue;
+        }
+      
         .projects{
-            margin-top: 50%;
-            transform: translateY(-50%);
-            text-decoration: none;
-            background-color: rgb(255, 118, 248);
-            font-family: Helvetica ;
-            font-size: 36px;
-            color: white;
-            font-size: 1em;
-            font-weight: bold;
-            border-radius: 25.5px;
+            padding-top: 2px;
             display:flex;
+            text-align: center;
             justify-content: center;
-            align-items: center;
+            width: 85px;
+            height: 20px;
+            line-height: 20px;
+            border-radius:30px;
+            background-color: cornflowerblue;
+            text-decoration: none;
+            font-family: Helvetica ;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            transition: all .3s ease;
+
         }
 
         .intro{
             text-align: center;
             font-family: Helvetica ;
+            
         }
         .imgwrap{
+            margin-top: 20px;
             text-align: center;
         }
         h1{
             line-height: 3px;
+            font-size: 60px;
+            font-style: italic;
         }
         p{
             line-height: 5px;
+            margin-bottom: -40px;
         }
         img{
-            width: 200px;
+            width: 220px;
             height: 200px;
             object-fit: cover;
         }
@@ -97,16 +119,18 @@
         </div>
         <div class="intro">
             <h1>Johnny Dean</h1>
-            <p>College Student and <span style="color:blue"> (future) </span> software engineer</p>
+            <p>College Student and <span style="color:cornflowerblue"><i>(future)</i> </span> software engineer</p>
         </div>
 
         <div class="links">
-
+            
             <a class="github" href="https://github.com/Johnny-Dean" title="github"></a>
             <a class="email" href="mailto: johndevince@mail.fresnostate.edu" title="mail"></a>
+            <div class="vl"></div>
             <a class="resume" href="google.com" title="resume">Resume</a>  
+            <div class="project-box">
             <a class="projects" href="google.com" title=projects>Projects</a>
-            
+            </div>
         </div>
    </div>
 </div>
